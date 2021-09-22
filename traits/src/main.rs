@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 trait Summary {
     fn summarize(&self) -> String {
         String::from("(Read more...)")
@@ -56,6 +58,8 @@ where T: PartialOrd + Copy {
     largest
 }
 
+
+
 fn main() {
     let tweet = Tweet {
         username: String::from("sdelvalle"),
@@ -79,5 +83,7 @@ fn main() {
 
     let result = largest(&char_list);
     println!("The largest char is {}", result);
+
+
 
 }
